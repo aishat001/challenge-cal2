@@ -47,24 +47,24 @@ body {
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 20rem;
-    height: 30rem;
+    width: 25rem;
+    height: 35rem;
     border: none;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    border-radius: 5px;
-    top: 100px;
+    top: 60px;
   }
   .frame {
     display: grid;
     grid-template-rows: 3fr 7fr;
-    width: 19rem;
-    height: 29rem;
+    width: 20rem;
+    height: 32rem;
     border: none;
-    border-radius: 4px;
-    box-shadow: 0px 0px 50px rgb(206, 205, 205);
-
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgba(165, 165, 165, 0.76);
+    padding-bottom: 20px;
+    background: white;
   }
   .display {
     display: grid;
@@ -79,7 +79,7 @@ body {
     padding: 0 1rem;
     font-size: 1rem;
     align-items: center;
-    color: slategrey;
+    color: rgba(175, 176, 177, 0.89);
     font-weight: 800;
   }
   .result {
@@ -106,9 +106,9 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
-    color: rgb(104, 103, 103);
+    color: rgba(99, 100, 100, 0.89);
   }
   .keyboard > span {
     margin: auto;
@@ -123,3 +123,19 @@ body {
   span.zero {
     grid-column: 2/3; 
   }
+  @media only screen and (min-width : 320px) and (max-width :475px) {
+    .cal {
+        width: 15rem;
+        top: 50px;
+    }
+    .body {
+        width: 320px;
+        margin: 0px;
+        height: 650px;
+    }
+}
+@media only screen and (width : 375px){
+  .body {
+    width: 375px;
+  }
+}
