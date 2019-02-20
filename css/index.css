@@ -113,10 +113,10 @@ body {
   .keyboard > span {
     margin: auto;
   }
-  .key:active {
+  /*.key:active {
     background: slategrey;
     color: white;
-  }
+  }*/
   .operator {
     color: #63b3e9;
   }
